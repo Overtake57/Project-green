@@ -1,54 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="/Project-green/assets/style/index.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Green</title>
-</head>
-<body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="/Project-green/assets/img/onilogo.png" class="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-text">
-        <p>Web Developper</p>
-        <h1>Hi, I'm <span>Yoann</span><br> from France</h1>
-    </div>
-  </div>
-</div>
-  <!-- ------------ABOUT------------ -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        
-      <img src="/Project-green/assets/img/">
-      <div class="about-col-2">
-        <h1 class="sub-title">About me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt voluptatibus amet alias optio, rerum voluptate quidem cumque, fuga laborum pariatur beatae fugiat nobis provident possimus quasi, similique asperiores qui!</p>
-
-        <div class="tab-titles">
-          <p class="tab-links active-link">Skills</p>
-          <p class="tab-links">Experience</p>
-          <p class="tab-links">Education</p>
-
+  <head>
+    <script src="/Project-green/assets/script/script.js" async></script>
+    <link rel="stylesheet" href="/Project-green/assets/style/index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Green</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/Project-green/assets/img/onilogo1.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developper</p>
+          <h1>
+            Hi, I'm <span>Yoann</span><br />
+            from France
+          </h1>
         </div>
       </div>
     </div>
-  </div>
-</div>
-  
+    <!-- ------------ABOUT------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Project-green/assets/img/" />
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos id magnam nam nihil autem fuga error inventore
+                beatae eveniet ex alias, voluptatum assumenda impedit voluptate
+                qui distinctio suscipit! Explicabo ut dicta in, facere, nulla
+                deserunt minus sapiente dignissimos odio error quis harum
+                quisquam cupiditate eveniet autem aliquid. Aperiam, nulla vero.</p>
 
-
-</body>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick= "opentab ('skills')"> Skills </p>
+                <p class="tab-links" onclick= "opentab ('experience')"> Experience </p>
+                <p class="tab-links" onclick= "opentab ('education')"> Education </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span> Dev Web and Mobile</span><br />
+                    Creating Web Site
+                  </li>
+                  <li>
+                    <span> Web development</span><br />
+                    Web app development
+                  </li>
+                  <li>
+                    <span> Back End Dev</span><br />
+                    I like working in a dark room
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2022 - current</span><br />
+                    Dev Web and Mobile at Metz Numeric School
+                  </li>
+                  <li>
+                    <span> Lorem ipsum. </span><br />
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li>
+                    <span> Lorem ipsum. </span><br />
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span> Lorem ipsum. </span><br />
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li>
+                    <span> Lorem ipsum. </span><br />
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li>
+                    <span> Lorem ipsum. </span><br />
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------SERVICES------------ -->
+  </body>
 </html>
