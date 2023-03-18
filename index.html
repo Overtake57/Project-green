@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="./assets/script/script.js" async></script>
+    <script src="./assets/script/app.js" async></script>
     <script
       src="https://kit.fontawesome.com/587ab224da.js"
       crossorigin="anonymous"
@@ -17,13 +17,15 @@
       <div class="container">
         <nav>
           <img src="./assets/img/onilogo1.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Web Developper</p>
@@ -160,7 +162,7 @@
 
     <!-- -----------PORTFOLIO------------ -->
 
-    <section class="portfolio">
+    <section id="portfolio">
       <article class="container">
         <h1 class="sub-title">My work</h1>
         <div class="work-list">
@@ -218,10 +220,7 @@
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
-            <a
-              href="/Project-green/assets/img/Agnes.Yoann.CV.pdf"
-              download
-              class="btn btn2"
+            <a href="assets/img/Agnes.Yoann.CV.pdf" download class="btn btn2"
               >Download CV</a
             >
           </div>
